@@ -1,0 +1,7 @@
+{
+    "certPath": "/etc/letsencrypt/live/salt.ruv.wtf/fullchain.pem",
+    "keyPath": "/etc/letsencrypt/live/salt.ruv.wtf/privkey.pem",
+    "port": 8080,
+    "updateInterval": 5000,
+    "apiUrl": "https://www.saltybet.com/state.json"
+}
