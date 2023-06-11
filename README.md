@@ -1,10 +1,10 @@
-# WebSocket Driver
+# API WebSocket Bridge
 
-WebSocket Driver is a Node.js application designed to be run in a Docker container. It constantly refreshes an API at a set interval and distributes WebSocket (WSS) events to connected clients.
+API WebSocket Bridge is a Node.js application designed to be run in a Docker container. It constantly refreshes an API at a set interval and distributes WebSocket (WSS) events to connected clients.
 
 ## Prerequisites
 
-Before running the WebSocket Driver, make sure you have the following:
+Before running the API WebSocket Bridge, make sure you have the following:
 
 - Docker installed on your machine.
 
@@ -12,7 +12,7 @@ Certainly! Here's the updated 'Getting Started' section with the reference to th
 
 ## Getting Started
 
-To run the WebSocket Driver in a Docker container, follow these steps:
+To run the API WebSocket Bridge in a Docker container, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
@@ -21,7 +21,7 @@ To run the WebSocket Driver in a Docker container, follow these steps:
 cd websocket-driver
 ```
 
-3. Configure the WebSocket Driver by editing the `config.json` file located in the `config` directory. Refer to the 'Configuration' section below for details on how to customize the configuration based on your requirements and the API you are working with.
+3. Configure the API WebSocket Bridge by editing the `config.json` file located in the `config` directory. Refer to the 'Configuration' section below for details on how to customize the configuration based on your requirements and the API you are working with.
 
 4. Build the Docker image.
 
@@ -129,13 +129,13 @@ cd websocket-driver
 npm install
 ```
 
-4. Start the WebSocket Driver.
+4. Start the API WebSocket Bridge.
 
 ```bash
 npm start
 ```
 
-The WebSocket Driver will now be running on your local machine.
+The API WebSocket Bridge will now be running on your local machine.
 
 ## License
 
