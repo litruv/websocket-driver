@@ -8,8 +8,6 @@ Before running the API WebSocket Bridge, make sure you have the following:
 
 - Docker installed on your machine.
 
-Certainly! Here's the updated 'Getting Started' section with the reference to the 'Configuration' section:
-
 ## Getting Started
 
 To run the API WebSocket Bridge in a Docker container, follow these steps:
