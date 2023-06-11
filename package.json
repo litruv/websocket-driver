@@ -5,7 +5,7 @@
   "main": "source/index.js",
   "scripts": {
     "start": "node source/index.js",
-    "docker-build": "docker build -t websocket-driver ."
+    "docker-build": "docker build -t api-websocket-bridge ."
   },
   "author": "Litruv",
   "license": "Apache 2.0",
