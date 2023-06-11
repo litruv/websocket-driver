@@ -16,7 +16,7 @@ To run the API WebSocket Bridge in a Docker container, follow these steps:
 2. Navigate to the project directory.
 
 ```bash
-cd websocket-driver
+cd api-websocket-bridge
 ```
 
 3. Configure the API WebSocket Bridge by editing the `config.json` file located in the `config` directory. Refer to the 'Configuration' section below for details on how to customize the configuration based on your requirements and the API you are working with.
@@ -24,17 +24,17 @@ cd websocket-driver
 4. Build the Docker image.
 
 ```bash
-docker build -t websocket-driver .
+docker build -t api-websocket-bridge .
 ```
 
 5. Run the Docker container, exposing the necessary port and providing the required volume mounts.
 
 ```bash
-docker run -d -p 8080:8080 --name websocket-container \
+docker run -d -p 8080:8080 --name api-websocket-bridge \
   -v /path/to/cert/fullchain.pem:/app/cert/fullchain.pem \
   -v /path/to/cert/privkey.pem:/app/cert/privkey.pem \
   -v /path/to/config:/app/config \
-  websocket-driver
+  api-websocket-bridge
 ```
 
 Make sure to replace `/path/to/cert` with the path to your SSL certificate and key files, and `/path/to/config` with the path to your `config.json` file.
@@ -42,7 +42,7 @@ Make sure to replace `/path/to/cert` with the path to your SSL certificate and k
 
 ## Configuration
 
-The WebSocketDriver application relies on a configuration file (`config.json`) to specify various settings. Below is an example configuration that corresponds to the example response from Salty Bet's API:
+The API WebSocket Bridge application relies on a configuration file (`config.json`) to specify various settings. Below is an example configuration that corresponds to the example response from Salty Bet's API:
 
 ```json
 {
