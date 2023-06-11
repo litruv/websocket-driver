@@ -118,7 +118,7 @@ To set up the project for development, follow these steps:
 2. Navigate to the project directory.
 
 ```bash
-cd websocket-driver
+cd api-websocket-bridge
 ```
 
 3. Install the required dependencies.
