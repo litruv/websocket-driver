@@ -1,16 +1,16 @@
-const WebSocketDriver = require('./WebSocketDriver');
+const WebSocketBridge = require('./bridge');
 
 // Load the configuration from config.json
 const config = require('/app/config/config.json');
 
 // Create an instance of WebSocketDriver
-const driver = new WebSocketDriver(config);
+const driver = new WebSocketBridge(config);
 
-// Start the WebSocket driver
+// Start the WebSocket Bridge
 driver.start()
   .then(() => {
-    driver.log('WebSocket driver is running', 'info');
+    driver.log('WebSocket Bridge is running', 'info');
   })
   .catch((error) => {
-    driver.log(`Failed to start WebSocket driver: ${error.message}`, 'error');
+    driver.log(`Failed to start WebSocket Bridge: ${error.message}`, 'error');
   });
