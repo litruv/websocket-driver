@@ -147,8 +147,5 @@ This project makes use of the following packages:
 
 - [axios](https://www.npmjs.com/package/axios) v1.4.0
 - [events](https://www.npmjs.com/package/events) v3.3.0
-- [jquery](https://www.npmjs.com/package/jquery) v3.7.0
-- [socket.io](https://www.npmjs.com/package/socket.io) v4.6.2
-- [socket.io-client](https://www.npmjs.com/package/socket.io-client) v4.6.2
 
 We would like to express our gratitude to the authors and maintainers of these packages for their valuable contributions to the open-source community.
