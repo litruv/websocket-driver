@@ -1,0 +1,31 @@
+{
+    "certPath": "/app/cert/fullchain.pem",
+    "keyPath": "/app/cert/privkey.pem",
+    "port": 8080,
+    "updateInterval": 5000,
+    "apiUrl": "https://www.saltybet.com/state.json",
+    
+    "events": {
+        "teamNamesChange": {
+          "emitEvent": "teamNamesChange",
+          "params": ["p1name", "p2name"] 
+        },
+        "betAmountChange": {
+          "emitEvent": "betAmountChange",
+          "params": ["p1total", "p2total"]
+        },
+        "statusChange": {
+          "emitEvent": "statusChange",
+          "params": ["status"]
+        },
+        "alertChange": {
+          "emitEvent": "alertChange",
+          "params": ["alert"]
+        },
+        "remainingChange": {
+          "emitEvent": "remainingChange",
+          "params": ["remaining"]
+        }
+      }
+
+}

@@ -18,7 +18,6 @@ class WebSocketDriver {
      * @type {Object}
      */
     this.config = config;
-    this.config.events = require('./driverconfig.json').events;
     this.wss = null;
     this.eventEmitter = new EventEmitter();
     this.intervalId = null;

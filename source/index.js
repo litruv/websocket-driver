@@ -1,7 +1,7 @@
 const WebSocketDriver = require('./WebSocketDriver');
 
 // Load the configuration from config.json
-const config = require('./config.json');
+const config = require('/app/config/config.json');
 
 // Create an instance of WebSocketDriver
 const driver = new WebSocketDriver(config);

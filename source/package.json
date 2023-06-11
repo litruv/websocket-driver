@@ -1,13 +1,13 @@
 {
-  "name": "reporter",
+  "name": "websocket-driver",
   "version": "1.0.0",
-  "description": "",
+  "description": "WebSocket Driver is a Node.js application that provides a WebSocket server for real-time communication. It allows clients to connect and exchange data using the WebSocket protocol",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docker-build": "docker build -t websocket-driver ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Litruv",
+  "license": "Apache 2.0",
   "dependencies": {
     "axios": "^1.4.0",
     "events": "^3.3.0",
