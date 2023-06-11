@@ -5,7 +5,7 @@ FROM node:18
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY source/package.json source/package-lock.json /app/
+COPY package.json package-lock.json /app/
 
 # Install dependencies
 RUN npm install --production
