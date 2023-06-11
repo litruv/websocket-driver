@@ -1,8 +1,0 @@
-{
-    "source": "./path/to/your/javascript/files",
-    "destination": "./docs/api",
-    "plugins": [],
-    "title": "My Project Documentation",
-    "index": "./path/to/your/index.md"
-  }
-  
