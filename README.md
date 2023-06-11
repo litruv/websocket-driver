@@ -97,7 +97,7 @@ The example response from Salty Bet's API:
   "remaining": "78 more matches until the next tournament!"
 }
 ```
-
+ 
 The configuration defines five events with their respective `emitEvent` names and associated parameters. These events allow you to subscribe to specific changes in the API response:
 
 - `teamNamesChange`: Triggers when the names of the players change (`"p1name"` or `"p2name"`).
