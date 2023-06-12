@@ -47,4 +47,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/api-websocket-bridge:${{ env.IMAGE_TAG }}
+          tags: ghcr.io/${{ github.actor }}/api-websocket-bridge:${{ env.IMAGE_TAG }}
