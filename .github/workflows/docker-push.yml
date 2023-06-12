@@ -38,9 +38,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Transform tag to lowercase
+        id: lowercase
+        run: |
+          echo "::set-output name=TAG::$(echo ${{ env.IMAGE_TAG }} | tr '[:upper:]' '[:lower:]')"
+
       - name: Build and push Docker image to GitHub Docker Registry
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}/api-websocket-bridge:${{ env.IMAGE_TAG | lower }}
+          tags: ghcr.io/${{ github.repository }}/api-websocket-bridge:${{ steps.lowercase.outputs.TAG }}
